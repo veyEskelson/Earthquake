@@ -14,8 +14,7 @@ d3.json(url,function(data){
 function createfeatures(earthquakedata) {
 
   function onEachFeature(feature, layer) {
-      layer.bindPopup("<h4>Magnitude: " + feature.properties.mag + "<br>" +
-     "<h5> Magnitude: " + feature.properties.place +"</h5><hr><p>" +feature.properties.place+"<br>"+new Date(feature.properties.time) + "</p>");
+      layer.bindPopup("<h4>Magnitude: " + feature.properties.mag + "<br><h5>"+ feature.properties.place +"</h5><hr><p>" +feature.properties.place+"<br>"+new Date(feature.properties.time) + "</p>");
   }
   
   var earthquakes =L.geoJSON(earthquakedata,{

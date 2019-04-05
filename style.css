@@ -5,6 +5,7 @@ body {
   margin:0; 
   padding:0;
   font-family:'Vast Shadow', cursive;
+  background-image: url("mixedaniamls4.jpg");
   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +13,7 @@ body {
 }
 
 /* set map, body, and html to 100% of the screen size */
-#map{
-  font-family: 'Shadows Into Light Two', cursive;
-}
+#map,
 body,
 html {
   height: 100%;
@@ -23,7 +22,6 @@ html {
 .legend {
   line-height: 18px;
   color: #555;
-  font-family: 'Indie Flower', cursive;
 }
 .legend i {
   width: 28px;
@@ -31,13 +29,13 @@ html {
   float: left;
   margin-right: 20px;
   opacity: 0.7;
-  font-family: 'Indie Flower', cursive;
 }
+
 
 .info {
   padding: 6px 8px;
   
-  background: rgb(9, 235, 148);
+  background: white;
   background: rgba(255,255,255,0.8);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -52,16 +50,52 @@ html {
       bottom:0;
       width:50%; }
       text-center {
-      background: rgb(153, 243, 255);
-      overflow: hidden; 
-      font-family: 'Indie Flower', cursive;
+      background: #f99;
+      overflow: hidden;
   }
-
+  .bg{
+    /* The image used */
+    background-image: url("mixedaniamls4.jpg");
+    /* Full height */
+    height: auto; 
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    opacity: 0.3;
+    top:0;
+  }
+  
+  
+  #menu {
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  font-family: 'Indie Flower', cursive;
+  }
+  
+  
+  
+  .marker {
+    background-image: url('icons/Pins/Cat.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  
   .mapboxgl-popup {
-    max-width: 50px;
+    max-width: 200px;
   }
   
   .mapboxgl-popup-content {
     text-align: center;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Open Sans', sans-serif;
   }
+
+  

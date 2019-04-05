@@ -14,7 +14,7 @@ d3.json(url,function(data){
 function createfeatures(earthquakedata) {
 
   function onEachFeature(feature, layer) {
-      layer.bindPopup("<h4>Magnitude: " + feature.properties.mag + "<br>" +
+      layer.bindPopup("<h4>Magnitude: " + feature.properties.mag
     +"<hr><p>" +feature.properties.place+"<br>"+new Date(feature.properties.time) + "</p>");
   }
   
